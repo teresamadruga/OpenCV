@@ -6,7 +6,7 @@ import numpy as np
 capture = cv2.VideoCapture(0)
 
 while True:
-    frame_is_read, frame = capture.read()
+    has_frame, frame = capture.read()
     # gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     gray = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
 
